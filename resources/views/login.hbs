@@ -1,0 +1,35 @@
+<form action="login" method="post">
+<div class="auth-page">
+    <div class="container page">
+        <div class="row">
+
+            <div class="col-md-6 offset-md-3 col-xs-12">
+                <h1 class="text-xs-center">Sign In</h1>
+                
+
+                {{!-- <ul class="error-messages">
+                    <li>That email is already taken</li>
+                </ul> --}}
+
+                <form action="/login" method="post">
+                    <fieldset class="form-group">
+                        <input class="form-control form-control-lg" type="text" name="email" placeholder="Email" autofocus>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <input class="form-control form-control-lg" type="password" name="password" placeholder="Password">
+                    </fieldset>
+                    <button class="btn btn-lg btn-primary pull-xs-right">
+                        Sign In
+                    </button>
+                </form>
+                <form action="/verifyEmail" method="post">
+                 <button class="btn btn-lg btn-primary pull-xs-right">
+                        Forgot password
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+</form>

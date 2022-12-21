@@ -1,0 +1,29 @@
+<div class="container-fluid d-flex w-100 h-100 p-3 mx-auto flex-column ">
+<div class="mt-2">
+        <a class="navbar-brand col-6 text-danger fw-bold  " href="#">Danh Sách Người Dùng</a>
+    <a href="/register" class="btn btn-primary">Thêm Quản Trị Viên</a>
+    </div>
+<div class="mt-4">
+    
+    <div class="row">
+    {{#each data }}
+    <div class="col-sm-6 col-lg-4 mt-2 ">
+        <div class="card card-response-item" style="width: 18rem; height: 40rem;">
+            <img src="{{imageUri}}" style="width: 16rem;height: 20rem;" class="card-img-top" alt="Card image cap ">
+            <div class="card-body">
+                <h5 class="card-title">Tên : {{name}}</h5>
+                {{!-- <h5 class="card-title">{{@key}}</h5> --}}
+                <p class="card-text">age : {{age}}</p>
+                <p class="card-text">Phone : {{phone}}</p>
+                <p class="card-text">Email : {{email}}</p>
+                <p class="card-text">Hobbies : {{hobbies}}</p>
+
+                <a href="/delete/{{@key}}" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+        </div>
+    {{/each}}
+
+    </div>
+</div>
+</div>
